@@ -14,7 +14,7 @@ namespace ConsoleSample
         {
 
             EntityRepository entityRepository = new EntityRepository();
-            Entity myEntity = entityRepository.GetByID(Guid.NewGuid());
+            Entity myEntity = entityRepository.GetById(Guid.NewGuid());
 
             myEntity.Name = "Tom";
             Console.WriteLine("New entity ID: " + myEntity.ID.ToString());
